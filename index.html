@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billy App Landing Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="top-section">
+        <img src="allyourbills.gif" alt="All Your Bills Organized">
+    </div>
+
+    <div class="intro-section">
+        <img src="allinone.gif" alt="Billy App All in One">
+    </div>
+
+
+    <div class="container my-5">
+        <div class="feature-section">
+            <img src="home2.png" alt="Αρχική Οθόνη Billy App">
+            <div class="feature-text">
+                <h2>Meet Billy App</h2>
+                <ul>
+                    <li>Όλοι οι μηνιαίοι λογαριασμοί σου ταξινομημένοι σε μία εφαρμογή.</li>
+                    <li>Ειδοποιήσεις για κάθε νέο ή ληξιπρόθεσμο λογαριασμό.</li>
+                    <li>Πλήρης έλεγχος των μηνιαίων εξόδων σου.</li>
+                </ul>
+            </div>
+        </div>
+    
+        <!-- Feature Section 2 -->
+        <div class="feature-section">
+            <img src="newac.png" alt="Εξερεύνηση Κατηγοριών">
+            <div class="feature-text">
+                <h2>Διαδικασία</h2>
+                <ul>
+                    <li>Συνδέσου μία φορά σε όλες τις υπηρεσίες σου.</li>
+                    <li>Είσαι έτοιμος να έχεις τον έλεγχο για κάθε νεο λογαριασμό Οργάνωσε - Πλήρωσε - Αρχειοθέτησε</li>
+                </ul>
+            </div>
+        </div>
+    
+        <!-- Feature Section 3 -->
+        <div class="feature-section">
+            <img src="home.png" alt="Οργάνωση Κατηγοριών">
+            <div class="feature-text">
+                <h2>Αρχική</h2>
+                <ul>
+                    <li>Δες όλους τους λογαριασμούς σου σε ένα μέρος, χωρίς πολλαπλές πλατφόρμες.</li>
+                    <li>Πλήρωσε άμεσα με ένα μόνο κλικ.</li>
+                    <li>Προγραμμάτισε πληρωμές ή οργάνωσέ τες σε κατηγορίες.</li>
+                </ul>
+            </div>
+        </div>
+    
+        <!-- Feature Section 4 -->
+        <div class="feature-section">
+            <img src="categories.png" alt="Νέοι Λογαριασμοί">
+            <div class="feature-text">
+                <h2>Κατηγορίες</h2>
+                <ul>
+                    <li>Οργάνωσε τους λογαριασμούς σου σε εξατομικευμένες κατηγορίες.</li>
+                    <li>Διατήρησε τον έλεγχο στα κινητά και ακίνητα περιουσιακά σου στοιχεία.</li>
+                    <li>Πρόσβαση ανά πάσα στιγμή.</li>
+                </ul>
+            </div>
+        </div>
+    
+        <!-- Feature Section 5 -->
+        <div class="feature-section">
+            <img src="calendar.png" alt="Ημερολόγιο">
+            <div class="feature-text">
+                <h2>Ημερολόγιο</h2>
+                <ul>
+                    <li>Προγραμμάτισε πληρωμές εύκολα.</li>
+                    <li>Ενημερώσου για ληξιπρόθεσμους λογαριασμούς.</li>
+                    <li>Χρησιμοποίησε το ενσωματωμένο ημερολόγιο για καλύτερη διαχείριση.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="feature-section text-center">
+        <a href="https://www.linkedin.com/company/billy-pays/" target="_blank" class="btn btn-linkedin">
+            <img src="linkedin.png" alt="LinkedIn Logo" class="linkedin-logo">
+            Follow us on LinkedIn for the latest updates
+        </a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center py-4 mt-5">
+        <p>© 2024 Billy App. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Function to reveal elements on scroll
+        const revealOnScroll = () => {
+            const sections = document.querySelectorAll('.feature-section');
+            const triggerHeight = window.innerHeight * 0.85;
+
+            sections.forEach(section => {
+                const sectionTop = section.getBoundingClientRect().top;
+                if (sectionTop < triggerHeight) {
+                    section.classList.add('show');
+                }
+            });
+        };
+
+        // Add scroll event listener
+        window.addEventListener('scroll', revealOnScroll);
+
+        // Trigger animation on page load
+        revealOnScroll();
+    </script>
+</body>
+</html>
